@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Galaxy</title>
+    <title>Gymnast - Gym Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{asset('Template/img/favicon.ico')}}" rel="icon">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="{{asset('Template/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css')}}" rel="stylesheet">
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="{{asset('Template/lib/flaticon/font/flaticon.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="{{asset('Template/css/style.min.css')}}" rel="stylesheet">
 </head>
+
 
 <body class="bg-white">
     <!-- Navbar Start -->
@@ -33,18 +34,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="feature.html" class="nav-item nav-link">Our Features</a>
-                    <a href="class.html" class="nav-item nav-link">Classes</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="/index" class="nav-item nav-link active">Home</a>
+                    <a href="/tam" class="nav-item nav-link">Tools and Machine</a>
+                    <a href="/upload" class="nav-item nav-link">Upload</a>
+                    <a href="/expoint" class="nav-item nav-link">Exchange Point</a>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                    <a href="/login" class="navbar-item nav-link">Login</a>
+                    <a href="/register" class="navbar-item nav-link">Register</a>
                 </div>
             </div>
         </nav>
@@ -56,19 +52,19 @@
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="{{asset('Template/img/carousel-1.jpg')}}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
-                        <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                        <a href="{{asset('Template/')}}" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="{{asset('Template/img/carousel-2.jpg')}}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
-                        <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                        <a href="{{asset('Template/')}}" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +77,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
 
     <!-- Gym Class Start -->
     <div class="container gym-class mb-5">
@@ -117,7 +112,7 @@
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="Image">
+                <img class="img-fluid mb-4 mb-lg-0" src="{{asset('Template/img/about.jpg')}}" alt="Image">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-4 font-weight-bold mb-4">10 Years Experience</h2>
@@ -189,7 +184,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-1.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{{asset('Template/img/feature-1.jpg')}}" alt="Image">
                         <i class="flaticon-barbell"></i>
                     </div>
                     <div class="col-sm-7">
@@ -201,7 +196,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-2.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{{asset('Template/img/feature-2.jpg')}}" alt="Image">
                         <i class="flaticon-training"></i>
                     </div>
                     <div class="col-sm-7">
@@ -213,7 +208,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-3.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{{asset('Template/img/feature-3.jpg')}}" alt="Image">
                         <i class="flaticon-trends"></i>
                     </div>
                     <div class="col-sm-7">
@@ -225,7 +220,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-4.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{{asset('Template/img/feature-4.jpg')}}" alt="Image">
                         <i class="flaticon-support"></i>
                     </div>
                     <div class="col-sm-7">
@@ -582,7 +577,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-1.jpg" alt="">
+                    <img class="card-img-top" src="{{asset('Template/img/team-1.jpg')}}" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -597,7 +592,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-2.jpg" alt="">
+                    <img class="card-img-top" src="{{asset('Template/img/team-2.jpg')}}" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -612,7 +607,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-3.jpg" alt="">
+                    <img class="card-img-top" src="{{asset('Template/img/team-3.jpg')}}" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -627,7 +622,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <div class="card border-0 bg-secondary text-center text-white">
-                    <img class="card-img-top" src="img/team-4.jpg" alt="">
+                    <img class="card-img-top" src="{{asset('Template/img/team-4.jpg')}}" alt="">
                     <div class="card-social d-flex align-items-center justify-content-center">
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -660,7 +655,7 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-1.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="{{asset('Template/img/testimonial-1.jpg')}}" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -672,7 +667,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-2.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="{{asset('Template/img/testimonial-2.jpg')}}" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -684,7 +679,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="d-flex align-items-center mb-4 text-white">
-                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="img/testimonial-3.jpg" alt="Image">
+                                        <img width="80" height="80" class="rounded-circle bg-dark p-2" src="{{asset('Template/img/testimonial-3.jpg')}}" alt="Image">
                                         <div class="pl-4">
                                             <h4 class="text-primary">Client Name</h4>
                                             <p class="m-0">Profession</p>
@@ -719,7 +714,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-1.jpg" alt="Image">
+                <img class="img-fluid mb-4" src="{{asset('Template/img/blog-1.jpg')}}" alt="Image">
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
                         <small>01</small>
@@ -739,7 +734,7 @@
                 <a class="btn btn-outline-primary mt-2 px-3" href="">Read More <i class="fa fa-angle-right"></i></a>
             </div>
             <div class="col-lg-6 mb-5 blog-item">
-                <img class="img-fluid mb-4" src="img/blog-2.jpg" alt="Image">
+                <img class="img-fluid mb-4" src="{{asset('Template/img/blog-2.jpg')}}" alt="Image">
                 <div class="d-flex align-items-center mb-4">
                     <div class="d-flex flex-column align-items-center justify-content-center rounded-circle bg-primary text-white" style="width: 80px; height: 80px;">
                         <small>01</small>
@@ -833,5 +828,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
