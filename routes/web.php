@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    print ('Galaxy');
+    return view('layout.home');
 });
